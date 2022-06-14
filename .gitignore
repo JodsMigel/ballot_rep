@@ -1,0 +1,6 @@
+.env
+data.env
+
+#Hardhat files
+cache
+artifacts

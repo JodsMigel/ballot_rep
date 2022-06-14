@@ -1,0 +1,18 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "setup": "npx hardhat clean && npx hardhat compile",
+    "coverage": "npx hardhat coverage --network hardhat"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.9.9",
+    "solidity-coverage": "^0.7.21"
+  },
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}

@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts\324.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> 324.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">  // SPDX-License-Identifier: MIT
+&nbsp;
+pragma solidity ^0.8.0;
+&nbsp;
+contract Voting {
+    address immutable owner;
+    uint constant fee = 0.01 ether;
+    uint constant DURATION = 3 days;
+    uint totalComission;
+    string[] allBallots; 
+    bool locked;
+    mapping(string =&gt; Ballot) public ballots;
+    
+    event newVoting(string name, uint time, address[] candidates);
+    event finishVoting(string name, address winner, uint pool);
+&nbsp;
+    struct Ballot {
+        address[] candidates;
+        address currentWinner;
+        uint pool;
+        uint endTime;
+        mapping(address=&gt;uint) firstVote;  //
+        mapping(address=&gt;uint) votes;  //
+        mapping(address=&gt;bool) voted; //
+        bool isFinished;
+    }
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >    constructor() {</span>
+<span class="cstat-no" title="statement not covered" >        owner = payable(msg.sender)</span>;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    modifier onlyOwner() {</span>
+<span class="cstat-no" title="statement not covered" >        require(msg.sender==owner, "You are not an owner!")</span>;
+        _;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addVoting(</span>
+        address[] calldata _candidates,
+        string calldata name
+        ) 
+        external 
+        onlyOwner 
+    {
+<span class="cstat-no" title="statement not covered" >        require(_candidates.length &gt; 1, "candidates must be more than 1")</span>;
+<span class="cstat-no" title="statement not covered" >        ballots[name].endTime = block.timestamp + DURATION</span>;
+<span class="cstat-no" title="statement not covered" >        ballots[name].candidates = _candidates</span>;
+<span class="cstat-no" title="statement not covered" >        allBallots.push(name)</span>;
+<span class="cstat-no" title="statement not covered" >        emit newVoting(name, block.timestamp, _candidates);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function vote(</span>
+        string calldata name,
+        address candidate
+        ) 
+        external 
+        payable 
+    {
+<span class="cstat-no" title="statement not covered" >        require(ballots[name].endTime &gt; block.timestamp, "The voting is over")</span>;
+<span class="cstat-no" title="statement not covered" >        require(msg.sender!=address(0), "Incorrect address!")</span>;
+<span class="cstat-no" title="statement not covered" >        require(msg.value == fee, "The fee must be equal to 0.01 ether")</span>;
+<span class="cstat-no" title="statement not covered" >        require(ballots[name].voted[msg.sender] == false, "You already used your vote")</span>;
+<span class="cstat-no" title="statement not covered" >        if (ballots[name].votes[candidate] == 0) {</span>
+<span class="cstat-no" title="statement not covered" >            ballots[name].firstVote[candidate] = block.timestamp</span>;
+        }
+        ballots[name].votes[candidate]++;
+<span class="cstat-no" title="statement not covered" >        if (ballots[name].votes[candidate] &gt;</span>
+            ballots[name].votes[ballots[name].currentWinner] &amp;&amp;
+            candidate != ballots[name].currentWinner)
+        {
+<span class="cstat-no" title="statement not covered" >            ballots[name].currentWinner = candidate</span>;
+        }
+        
+<span class="cstat-no" title="statement not covered" >        if (ballots[name].votes[candidate] ==</span>
+            ballots[name].votes[ballots[name].currentWinner] &amp;&amp;
+            ballots[name].firstVote[candidate] &gt;
+            ballots[name].firstVote[ballots[name].currentWinner])
+        {
+<span class="cstat-no" title="statement not covered" >            ballots[name].currentWinner = candidate</span>;
+        }
+        
+<span class="cstat-no" title="statement not covered" >        ballots[name].voted[msg.sender] = true</span>;
+<span class="cstat-no" title="statement not covered" >        ballots[name].pool += msg.value</span>;
+    }
+&nbsp;
+    receive() external payable {
+        totalComission += msg.value;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    modifier noReentrancy() {</span>
+<span class="cstat-no" title="statement not covered" >        require(!locked, "no reentrancy!")</span>;
+<span class="cstat-no" title="statement not covered" >        locked = true</span>;
+        _;
+<span class="cstat-no" title="statement not covered" >        locked = false</span>;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function finish(string calldata name) external noReentrancy {</span>
+<span class="cstat-no" title="statement not covered" >        require(ballots[name].endTime &lt;= block.timestamp, "The voting isn't over")</span>;
+<span class="cstat-no" title="statement not covered" >        require(ballots[name].isFinished == false, "The voting has already finished")</span>;
+<span class="cstat-no" title="statement not covered" >        ballots[name].isFinished = true</span>;
+<span class="cstat-no" title="statement not covered" >        emit finishVoting(name, ballots[name].currentWinner, ballots[name].pool);</span>
+<span class="cstat-no" title="statement not covered" >        totalComission += ballots[name].pool/10</span>;
+<span class="cstat-no" title="statement not covered" >        (bool success, ) = ballots[name].currentWinner.call{value: ballots[name].pool*9/10}("");</span>
+<span class="cstat-no" title="statement not covered" >        require(success, "Failed!")</span>;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function withdrawComission() external payable onlyOwner {</span>
+<span class="cstat-no" title="statement not covered" >        require(totalComission &gt; 0, "There is not a comission")</span>;
+<span class="cstat-no" title="statement not covered" >        (bool success, ) = owner.call{value: totalComission}("");</span>
+<span class="cstat-no" title="statement not covered" >        require(success == true, "Transfer failed")</span>;
+<span class="cstat-no" title="statement not covered" >        totalComission = 0</span>;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function showVoting(string calldata name) </span>
+    external view returns(
+        address[] memory candidates, 
+        address currentWinner,
+        uint pool,
+        uint endTime,
+        bool isFinished) 
+    {
+<span class="cstat-no" title="statement not covered" >        return (ballots[name].candidates, ballots[name].currentWinner, </span>
+                ballots[name].pool, ballots[name].endTime, ballots[name].isFinished);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >        function showVotes(string calldata name, address candidate) </span>
+    external view returns(uint)
+    {
+<span class="cstat-no" title="statement not covered" >        return ballots[name].votes[candidate];</span>
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jun 13 2022 16:28:11 GMT+0900 (Япония, стандартное время)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
